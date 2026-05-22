@@ -61,3 +61,33 @@ A rede está operando acima do limite recomendado de potência?
 
 ## Resposta Esperada
 Não. O consumo atual representa 74% da capacidade operacional total da rede, permanecendo dentro dos parâmetros seguros.
+
+# Teste 6 — Suporte Técnico
+
+## Pergunta
+Qual foi a última manutenção registrada na estação GW-03?
+
+## Resposta Esperada
+A última manutenção da estação GW-03 ocorreu em 12/05/2026 para substituição preventiva do módulo de refrigeração.
+
+---
+
+# Teste 7 — Comunicação Operacional
+
+## Pergunta
+Existe algum alerta prioritário ativo no sistema?
+
+## Resposta Esperada
+Sim. Há um alerta prioritário relacionado à instabilidade de comunicação da estação GW-11 desde às 15h08.
+
+---
+
+# Critérios de Avaliação
+
+O chatbot será considerado eficiente caso consiga:
+- responder corretamente às perguntas operacionais;
+- interpretar contexto técnico;
+- fornecer respostas claras e objetivas;
+- priorizar eventos críticos;
+- manter linguagem corporativa e profissional.
+
