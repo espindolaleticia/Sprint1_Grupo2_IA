@@ -1,113 +1,78 @@
-# Sprint1_Grupo2_IA
+# GoodWe Grid Assistant
 
-
-# Escopo do Projeto — GoodWe Grid Assistant
-
-## Contexto do Projeto
-
-O projeto GoodWe Grid Assistant foi desenvolvido dentro do contexto do GoodWe EV Challenge 2026, com foco na problemática ChargeGrid Intelligence.
-
-O desafio busca soluções capazes de melhorar a gestão operacional de redes de carregamento para veículos elétricos, principalmente em ambientes comerciais com múltiplas estações conectadas.
-
-Atualmente, muitos operadores enfrentam dificuldades relacionadas a:
-
-- monitoramento operacional descentralizado;
-  
-- ausência de inteligência contextual;
-  
-- demora na identificação de falhas;
-  
-- dificuldade no gerenciamento de potência elétrica;
-  
-- baixa visibilidade sobre consumo energético;
-  
-- suporte técnico ineficiente;
-  
-- ausência de ferramentas inteligentes de apoio operacional.
-
-O projeto propõe um chatbot inteligente capaz de centralizar informações críticas da operação e fornecer respostas contextualizadas em linguagem natural.
+## Assistente Inteligente para Operação Comercial de Eletropostos
 
 ---
 
-# Objetivo da Solução
+## Integrantes
 
-Desenvolver um assistente virtual corporativo baseado em IA generativa para auxiliar operadores comerciais, técnicos e administradores responsáveis pela infraestrutura de eletropostos.
-
-O chatbot deverá atuar como ferramenta operacional de apoio à tomada de decisão, permitindo acesso rápido a informações técnicas e operacionais da rede.
-
----
-
-# Personas Atendidas
-
-## Operador Comercial
-Responsável pelo monitoramento geral das estações, faturamento e disponibilidade operacional.
-
-## Técnico de Manutenção
-Responsável pela análise de falhas, alertas críticos e suporte técnico da infraestrutura.
-
-## Administrador da Rede
-Responsável pela gestão energética, acompanhamento de consumo e estabilidade operacional.
+- Felipe Perdigão Macedo
+- Felipe Mitsuo
+- Letícia
+- Laura Godoy
+- Mariana
+- Milena
 
 ---
 
-# Funcionalidades Principais
+## Curso
 
-O chatbot deverá ser capaz de:
+**FIAP — Ciência da Computação (CCPJ)**
 
+---
+
+## Problema Abordado
+
+Com o crescimento acelerado da adoção de veículos elétricos, empresas e operadores de eletropostos enfrentam desafios relacionados à gestão operacional das estações de carregamento.
+
+Entre os principais problemas estão:
+- ausência de monitoramento inteligente;
+- dificuldade no controle de potência;
+- falhas na comunicação entre estações;
+- dificuldade de faturamento;
+- falta de suporte automatizado;
+- baixa visibilidade operacional;
+- ausência de ferramentas inteligentes para análise de uso.
+
+O desafio GoodWe EV Challenge 2026 propõe soluções capazes de integrar inteligência operacional ao ecossistema de carregamento elétrico.
+
+---
+
+## Proposta da Solução
+
+O projeto GoodWe Grid Assistant propõe um chatbot inteligente baseado em IA generativa para auxiliar operadores comerciais e técnicos responsáveis pela infraestrutura de eletropostos.
+
+O chatbot será capaz de:
 - informar status operacional das estações;
-  
-- identificar estações offline;
-  
+- identificar falhas e alertas;
 - responder dúvidas técnicas;
-  
-- apresentar métricas de consumo energético;
-  
-- informar dados de faturamento;
-  
+- fornecer dados de consumo energético;
 - auxiliar no controle de potência;
-  
-- alertar sobre falhas críticas;
-  
-- fornecer suporte operacional em linguagem natural;
-  
-- interpretar dados operacionais contextualizados.
+- apoiar o faturamento operacional;
+- gerar respostas contextualizadas em linguagem natural.
 
 ---
 
-# Fontes de Dados
+## Tecnologias Utilizadas
 
-O sistema poderá futuramente consumir informações provenientes de:
-
-- logs operacionais;
-  
-- sensores elétricos;
-  
-- sistemas de monitoramento;
-  
-- estações de carregamento;
-  
-- APIs de telemetria;
-  
-- sistema de faturamento;
-  
-- registros de manutenção;
-  
-- alertas críticos da infraestrutura.
+| Tecnologia | Finalidade |
+|---|---|
+| Python | Backend principal |
+| FastAPI | Criação da API |
+| OpenAI API | Modelo de IA |
+| LangChain | Orquestração do fluxo conversacional |
+| ChromaDB | Base vetorial/contextual |
+| GitHub | Versionamento |
+| Draw.io | Modelagem do fluxograma |
 
 ---
 
-# Fluxo Operacional do Sistema
+## Justificativa Técnica
 
-1. O operador realiza uma pergunta em linguagem natural.
-   
-2. A API recebe a solicitação.
-   
-3. O sistema consulta o contexto operacional disponível.
-   
-4. O LangChain organiza o fluxo conversacional.
-   
-5. O modelo OpenAI interpreta a solicitação.
-    
-6. O chatbot gera uma resposta contextualizada.
-    
-7. A resposta é enviada ao operador.
+A OpenAI API foi escolhida devido à sua alta capacidade de compreensão contextual e geração de respostas naturais.
+
+O LangChain será utilizado para estruturar o fluxo conversacional e permitir futura integração com memória contextual.
+
+O ChromaDB permitirá implementar recuperação de contexto (RAG), possibilitando que o chatbot responda com base em documentos operacionais e registros das estações.
+
+O FastAPI foi selecionado por oferecer desempenho elevado e simplicidade para construção da API do sistema.
